@@ -19,7 +19,7 @@ A Linux-only terminal pet that reacts to:
 
 ## If `pet` isn’t recognized after copying, ensure that ~/.local/bin is in your PATH:
 
-## `export PATH="$HOME/.local/bin:$PATH"`
+`export PATH="$HOME/.local/bin:$PATH"`
 
 
 ### Option 1: Run via launcher script (no pip needed)
