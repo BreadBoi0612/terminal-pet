@@ -1,5 +1,31 @@
-#!/usr/bin/env python3
-from pet.main import run
+#!/usr/bin/env bash
+# terminal-pet launcher
 
-run()
+# Determine the directory of this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Auto-install pip if missing
+if ! command -v pip3 &> /dev/null; then
+    echo "pip3 not found. Attempting to install..."
+    if command -v apt &> /dev/null; then
+        sudo apt update && sudo apt install -y python3-pip
+    elif command -v pacman &> /dev/null; then
+        sudo pacman -S python-pip --noconfirm
+    elif command -v dnf &> /dev/null; then
+        sudo dnf install -y python3-pip
+    elif command -v zypper &> /dev/null; then
+        sudo zypper install -y python3-pip
+    else
+        echo "Unsupported package manager. Please install pip manually."
+        exit 1
+    fi
+fi
+
+# Install psutil if missing
+if ! python3 -c "import psutil" &> /dev/null; then
+    echo "Installing psutil..."
+    pip3 install --user psutil
+fi
+
+# Run the pet using absolute path
+python3 -m pet.main
