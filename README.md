@@ -29,3 +29,20 @@ chmod +x ~/.local/bin/pet`
 
 Run the pet from anywhere:
 `pet`
+
+### Option 2: Install via pip (recommended)
+
+Clone the repo:
+
+`git clone https://github.com/BreadBoi0612/terminal-pet.git
+cd terminal-pet`
+
+
+Install the package:
+
+`pip install --user -e`
+
+
+Run from anywhere:
+
+`pet`
