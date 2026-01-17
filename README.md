@@ -1,25 +1,31 @@
-# 🐾 terminal-pet
+# 🐾 Terminal Pet
 
 A Linux-only terminal pet that reacts to:
 - 🔋 Battery level
 - 🕒 Time of day
 - ⚡ Charging state
-
-All in pure ASCII.
+- 💬 Random dialogue
 
 ## Features
-- Linux-only (no Windows/macOS hacks)
-- Battery-aware moods
+- ASCII animations
 - Time-of-day behavior
 - Random dialogue
-- Zero GUI dependencies
+- Linux-native, no GUI
+- Works on all major distros
 
-## Demo
-(add screenshot or asciinema later)
+---
 
-## Install
-```bash
-git clone https://github.com/BreadBoi0612/terminal-pet.git
-cd terminal-pet
-python3 -m pet.main
+## Installation & Run
 
+### Option 1: Run via launcher script (no pip needed)
+
+Clone the repo:
+`git clone https://github.com/BreadBoi0612/terminal-pet.git`
+
+Copy the launcher to your PATH:
+`mkdir -p ~/.local/bin
+cp terminal-pet/scripts/pet ~/.local/bin/pet
+chmod +x ~/.local/bin/pet`
+
+Run the pet from anywhere:
+`pet`
