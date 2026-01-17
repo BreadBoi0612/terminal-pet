@@ -51,6 +51,9 @@ Run from anywhere:
 
 `pet`
 
+### If there are any issues, please make an issue form on GitHub. To find this, navigate to the `Issues` tab next to the `Code` tab and click `New Issue`
+
+
 ---
 
 ### Controls
