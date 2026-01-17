@@ -52,3 +52,11 @@ Run from anywhere:
 ### Controls
 
 Q — Quit
+
+---
+
+## Requirements
+
+-Python 3.8+
+-Linux (no Windows/macOS)
+-pip3 (optional; auto-installable via launcher script)
