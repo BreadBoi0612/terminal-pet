@@ -1,4 +1,4 @@
-# ![Terminal Pet Logo](assets/pet_logo.png)
+# ![Terminal Pet Logo](assets/pet-logo.png)
 # 🐾 Terminal Pet
 
 A Linux-only terminal pet that reacts to:
