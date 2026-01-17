@@ -40,7 +40,7 @@ cd terminal-pet`
 
 Install the package:
 
-`pip install --user -e`
+`pip install --user -e .`
 
 
 Run from anywhere:
