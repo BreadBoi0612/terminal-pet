@@ -46,3 +46,9 @@ Install the package:
 Run from anywhere:
 
 `pet`
+
+---
+
+### Controls
+
+Q — Quit
